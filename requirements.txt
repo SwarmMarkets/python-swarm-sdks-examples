@@ -1,0 +1,10 @@
+# Swarm Trading SDK Collection
+swarm-collection>=1.0.0b4
+
+# Required dependencies (if not installed with swarm-collection)
+web3>=6.0.0
+httpx>=0.24.0
+eth-account>=0.9.0
+pytz>=2023.3
+tenacity>=8.2.0
+python-dotenv>=1.0.0
