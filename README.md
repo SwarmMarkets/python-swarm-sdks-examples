@@ -153,9 +153,8 @@ For detailed documentation on each SDK, refer to the main repository:
 
 - Ethereum Mainnet
 - Polygon
-- Arbitrum
-- Optimism
 - Base
+- BNB Smart Chain 
 
 ## 💡 Tips
 

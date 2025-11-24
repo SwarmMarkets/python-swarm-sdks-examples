@@ -94,10 +94,10 @@ async def main():
             best_offers = await client.rpq_client.get_best_offers(
                 buy_asset_address=RWA_TOKEN_ADDRESS,
                 sell_asset_address=USDC_ADDRESS,
-                target_sell_amount="1",  # Want to sell 100 USDC
+                target_sell_amount="0.1",  # Want to sell 0.1 USDC
             )
             
-            print(f"Best offers to buy RWA with 1 USDC:")
+            print(f"Best offers to buy RWA with 0.1 USDC:")
             print(f"  Success: {best_offers.result.success}")
             print(f"  Target amount: {best_offers.result.target_amount}")
             print(f"  Total taken: {best_offers.result.total_withdrawal_amount_paid}")
@@ -122,10 +122,10 @@ async def main():
             quote = await client.get_quote(
                 from_token=USDC_ADDRESS,
                 to_token=RWA_TOKEN_ADDRESS,
-                from_amount=Decimal("1"),  # Spend 1 USDC
+                from_amount=Decimal("0.1"),  # Spend 0.1 USDC
             )
             
-            print(f"Quote for 1 USDC:")
+            print(f"Quote for 0.1 USDC:")
             print(f"  You will receive: {quote.buy_amount} RWA tokens")
             print(f"  Rate: {quote.rate}")
             print(f"  Source: {quote.source}")
@@ -145,7 +145,7 @@ async def main():
             result = await client.trade(
                 from_token=USDC_ADDRESS,
                 to_token=RWA_TOKEN_ADDRESS,
-                from_amount=Decimal("100"),  # Spend 100 USDC
+                from_amount=Decimal("0.1"),  # Spend 0.1 USDC
             )
             
             print(f"✅ Trade successful!")
@@ -168,9 +168,9 @@ async def main():
         try:
             result = await client.make_offer(
                 sell_token=RWA_TOKEN_ADDRESS,
-                sell_amount=Decimal("10"),
+                sell_amount=Decimal("1"),
                 buy_token=USDC_ADDRESS,
-                buy_amount=Decimal("1000"),
+                buy_amount=Decimal("100"),
                 is_dynamic=False,
             )
             

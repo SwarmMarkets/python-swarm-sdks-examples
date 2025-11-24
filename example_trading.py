@@ -130,7 +130,7 @@ async def main():
             result = await client.trade(
                 from_token=USDC_ADDRESS,
                 to_token=RWA_TOKEN_ADDRESS,
-                from_amount=Decimal("100"),
+                from_amount=Decimal("1"),
                 to_token_symbol=RWA_SYMBOL,
                 user_email=USER_EMAIL,
             )
@@ -174,7 +174,7 @@ async def main():
             result = await client.trade(
                 from_token=USDC_ADDRESS,
                 to_token=RWA_TOKEN_ADDRESS,
-                from_amount=Decimal("100"),
+                from_amount=Decimal("1"),
                 to_token_symbol=RWA_SYMBOL,
                 user_email=USER_EMAIL,
             )

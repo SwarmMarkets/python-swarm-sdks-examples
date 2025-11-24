@@ -135,7 +135,7 @@ async def main():
             result = await client.buy(
                 rwa_token_address=RWA_TOKEN_ADDRESS,
                 rwa_symbol=RWA_SYMBOL,
-                usdc_amount=Decimal("10"),  # Spend 10 USDC
+                usdc_amount=Decimal("1"),  # Spend 1 USDC
                 user_email=USER_EMAIL,
             )
             
@@ -165,7 +165,7 @@ async def main():
             result = await client.buy(
                 rwa_token_address=RWA_TOKEN_ADDRESS,
                 rwa_symbol=RWA_SYMBOL,
-                usdc_amount=Decimal("10"),  # Spend 10 USDC on Polygon
+                usdc_amount=Decimal("1"),  # Spend 1 USDC on Polygon
                 user_email=USER_EMAIL,
                 target_chain_id=1,  # Receive tokens on Ethereum mainnet
             )
@@ -192,7 +192,7 @@ async def main():
             result = await client.sell(
                 rwa_token_address=RWA_TOKEN_ADDRESS,
                 rwa_symbol=RWA_SYMBOL,
-                rwa_amount=Decimal("10"),  # Sell 10 tokens
+                rwa_amount=Decimal("1"),  # Sell 1 token
                 user_email=USER_EMAIL,
             )
             
